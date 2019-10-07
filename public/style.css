@@ -19,3 +19,25 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  border: 1px solid black;
+  align-items: center;
+}
+
+.col-container h2 {
+  text-align: center;
+}
+
+.column-li {
+  margin: 10px;
+}
