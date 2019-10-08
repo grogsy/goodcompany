@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Form field used in auth(login/register)
+ *
+ */
+
 const FormField = props => {
   const { labelText, onChange, fieldType, value } = props;
   return (

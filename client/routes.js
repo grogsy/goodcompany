@@ -2,7 +2,14 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { withRouter, Route, Switch } from "react-router-dom";
 import PropTypes from "prop-types";
-import { Login, SignUp, HomePage, Profile } from "./components";
+import {
+  Login,
+  SignUp,
+  HomePage,
+  Profile,
+  Community,
+  CreatePage
+} from "./components";
 
 import { me } from "./store";
 
@@ -20,9 +27,8 @@ class Routes extends Component {
         <Route path="/login" component={Login} />
         <Route path="/signup" component={SignUp} />
         <Route path="/home" component={Profile} />
-        {/* <Route path="/:community/about" component={About} />
-        <Route path="/:community/posts" component={Posts} />
-        <Route path="/:community/messages" component={ComMessages} /> */}
+        <Route path="/create" component={CreatePage} />
+        <Route path="/:community" component={Community} />
         <Route component={HomePage} />
       </Switch>
     );
